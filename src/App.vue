@@ -1,17 +1,65 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <NavBar></NavBar>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex justify-content-center">
+        <MainCarousel></MainCarousel>
+      </div>
+    </div>
+    <h3 class="mt-3">Popular products</h3>
+    <div class="row">
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+        <ProductThumbnail 
+        price="10 EUR" 
+        title="Product Name"
+        additionalInfo="New"
+        ></ProductThumbnail>
+      </div>
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+        <ProductThumbnail 
+        price="10 EUR" 
+        title="Product Name"
+        additionalInfo="Sold Out"
+        ></ProductThumbnail>
+      </div>
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+        <ProductThumbnail 
+        price="10 EUR" 
+        title="Product Name"
+        additionalInfo="Sold Out"
+        ></ProductThumbnail>
+      </div>
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+        <ProductThumbnail 
+        price="10 EUR" 
+        title="Product Name"
+        additionalInfo="Sold Out"
+        ></ProductThumbnail>
+      </div>
+      <div class="col-12 col-md-3 d-flex justify-content-center mt-3">
+        <ProductThumbnail 
+        price="10 EUR" 
+        title="Product Name"
+        additionalInfo="Sold Out  "
+        ></ProductThumbnail>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import NavBar from "./components/NavBar";
+  import MainCarousel from "./components/MainCarousel.vue";
+  import ProductThumbnail from "./components/ProductThumbnail.vue";
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+    MainCarousel,
+    NavBar,
+    ProductThumbnail
+    }
   }
-}
 </script>
 
 <style>
