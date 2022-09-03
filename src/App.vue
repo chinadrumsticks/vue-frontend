@@ -40,7 +40,7 @@
         <ProductThumbnail 
         price="10 EUR" 
         title="Product Name"
-        additionalInfo="Sold Out"
+        additionalInfo="Sold Out  "
         ></ProductThumbnail>
       </div>
     </div>
