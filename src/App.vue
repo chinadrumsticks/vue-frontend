@@ -65,6 +65,11 @@
         alert(res.data)
       }).catch((err)=> {
         alert(err)
+      }),
+      Webservice.getCategories().then((res)=> {
+        alert(res.data)
+      }).catch((err)=> {
+        alert(err)
       })
     }
   }
